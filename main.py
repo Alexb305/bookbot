@@ -1,7 +1,9 @@
+# Count and return total words 
 def count_words(text):
     new_list = text.split()
     return len(new_list)
 
+# Count and sort letters into a dictionary
 def count_letters(text):
     new_text = text.lower()
     new_dict = {}
@@ -13,6 +15,7 @@ def count_letters(text):
                 new_dict[i] = 1
     return sorted(new_dict.items())
 
+# Count and return total letters
 def total_letter_count(text2):
     new_text2 = text2.lower()
     new_dict2 = {}
@@ -31,5 +34,3 @@ print(f"There are {count_words(contents)} words in this book.")
 print(f"There are {total_letter_count(contents)} letters in this book.")
 print("Here is how many of each letter in this book")
 print (count_letters(contents))
-
-
