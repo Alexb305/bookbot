@@ -24,7 +24,6 @@ def total_letter_count(text2):
                 new_dict2[i] = 1
     return sum(new_dict2.values())
 
-
 with open('books/frankenstein.txt') as book:
     contents = book.read()
 
